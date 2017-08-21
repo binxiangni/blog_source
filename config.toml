@@ -6,6 +6,7 @@ googleAnalytics = ""
 disqusShortname = "binxiangni"
 enableEmoji = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+publishDir = "/Users/Brian/Documents/Code/binxiangni.github.io"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
