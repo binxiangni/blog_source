@@ -11,17 +11,18 @@ date: '2017-08-20'
 * Provide documentation for sparse matrix support in RcppArmadillo.
 
 ## Fully Merged Pull Requests  
+The source codes of RcppArmadillo is stored in [Github](https://github.com/RcppCore/RcppArmadillo). Below are all the merged pull requests committed by me during [Google Summer of Code](https://developers.google.com/open-source/gsoc/):
 
-* [Add support for dtCMatrix and dsCMatrix](https://github.com/RcppCore/RcppArmadillo/pull/135) 
-* [Add conversion and unit tests for dgT, dtT and dsTMatrix](https://github.com/RcppCore/RcppArmadillo/pull/136)
-* [Add conversion and unit tests for dgR, dtR and dsRMatrix](https://github.com/RcppCore/RcppArmadillo/pull/139)
-* [Add conversion and unit tests for pMatrix and ddiMatrix](https://github.com/RcppCore/RcppArmadillo/pull/140)
-* [Rewrite conversion for dgT, dtT and dsTMatrix, and add file-based tests](https://github.com/RcppCore/RcppArmadillo/pull/142)
-* [Add conversion and unit tests for indMatrix](https://github.com/RcppCore/RcppArmadillo/pull/144)
-* [Rewrite conversion for ddiMatrix](https://github.com/RcppCore/RcppArmadillo/pull/145)
-* [Add a warning message for matrices that cannot be converted](https://github.com/RcppCore/RcppArmadillo/pull/147)
-* [Add new vignette for sparse matrix support](https://github.com/RcppCore/RcppArmadillo/pull/152)
-* [Add support for sparse matrix conversion from Python SciPy](https://github.com/RcppCore/RcppArmadillo/pull/158)
+* [Add support for dtCMatrix and dsCMatrix](https://github.com/RcppCore/RcppArmadillo/pull/135/files). 
+* [Add conversion and unit tests for dgT, dtT and dsTMatrix](https://github.com/RcppCore/RcppArmadillo/pull/136/files).
+* [Add conversion and unit tests for dgR, dtR and dsRMatrix](https://github.com/RcppCore/RcppArmadillo/pull/139/files).
+* [Add conversion and unit tests for pMatrix and ddiMatrix](https://github.com/RcppCore/RcppArmadillo/pull/140/files).
+* [Rewrite conversion for dgT, dtT and dsTMatrix, and add file-based tests](https://github.com/RcppCore/RcppArmadillo/pull/142/files).
+* [Add conversion and unit tests for indMatrix](https://github.com/RcppCore/RcppArmadillo/pull/144/files).
+* [Rewrite conversion for ddiMatrix](https://github.com/RcppCore/RcppArmadillo/pull/145/files).
+* [Add a warning message for matrices that cannot be converted](https://github.com/RcppCore/RcppArmadillo/pull/147/files).
+* [Add new vignette for sparse matrix support](https://github.com/RcppCore/RcppArmadillo/pull/152/files).
+* [Add support for sparse matrix conversion from Python SciPy](https://github.com/RcppCore/RcppArmadillo/pull/158/files).
 
 ## Notes and Comments  
 * When a new function is added, one corresponding unit test should also be accompanied to verify the assertion.
@@ -32,9 +33,9 @@ date: '2017-08-20'
 * [Travis CI setup](https://github.com/mbonaci/mbo-storm/wiki/Integrate-Travis-CI-with-your-GitHub-repo).
 * [A PR at a time](https://github.com/RcppCore/RcppArmadillo/pull/136#issuecomment-309278391) to avoid conflicts.
 * [`Merge and squash`](https://github.com/RcppCore/RcppArmadillo/pull/136#issuecomment-309286287).
-* [`rebase`](https://github.com/RcppCore/RcppArmadillo/pull/139#issuecomment-309478465) and [`merge`](https://github.com/RcppCore/RcppArmadillo/pull/139#issuecomment-309488302).
+* [`Rebase`](https://github.com/RcppCore/RcppArmadillo/pull/139#issuecomment-309478465) and [`Merge`](https://github.com/RcppCore/RcppArmadillo/pull/139#issuecomment-309488302).
 * [DESCRIPTION file contains all essential information of a package.](https://github.com/RcppCore/RcppArmadillo/pull/140#issuecomment-309626340).
-* Rcpp uses 'proxy models', which may lead to a considerable copying cost when working with `std::vector<int>` rather than  `Rcpp::IntegerVector`.  reason](https://github.com/RcppCore/RcppArmadillo/pull/140#pullrequestreview-45318881).
+* Rcpp uses 'proxy models', which may lead to a considerable copying cost when working with `Rcpp::IntegerVector` rather than  `std::vector<int>`.  [Reason](https://github.com/RcppCore/RcppArmadillo/pull/140#pullrequestreview-45318881).
 * [Full consideration](https://github.com/RcppCore/RcppArmadillo/pull/140#discussion_r123146557) on types and property of a sparse matrix.
 * [Mechanism of RUnit](https://github.com/RcppCore/RcppArmadillo/pull/142#issuecomment-312998351).
 * [Runit requires every unit test covered in a function](https://github.com/RcppCore/RcppArmadillo/pull/142#issuecomment-313249482).
@@ -51,13 +52,13 @@ date: '2017-08-20'
 ## Achievements
 
 ### Package
-The R package version [RcppArmadillo 0.7.960.1.0](https://cran.r-project.org/web/packages/RcppArmadillo/index.html) with enhanced sparse matrix support has been released to CRAN. You can have access to it by `install.packages("RcppArmadillo")` in R. 
+The R package version [RcppArmadillo 0.7.960.1.1](https://cran.r-project.org/web/packages/RcppArmadillo/index.html) with enhanced sparse matrix support has been released to CRAN. You can have access to it by `install.packages("RcppArmadillo")` in R.  
 
 ### Vignettes
-An initial [version](https://github.com/binxiangni/Sparse_Matrix_in_RcppArmadillo/blob/master/RcppArmadillo-sparseMatrix.Rnw) on sparse matrix support in RcppArmadillo is written by me, and Dirk updated [it](https://github.com/RcppCore/RcppArmadillo/blob/master/vignettes/RcppArmadillo-sparseMatrix.Rnw) with the standard 'Rcpp Style' in LaTeX. You can have access to more readable vignettes here: [Initial](https://github.com/binxiangni/Sparse_Matrix_in_RcppArmadillo/blob/master/RcppArmadillo-sparseMatrix.pdf), [Improved](http://dirk.eddelbuettel.com/tmp/RcppArmadillo-sparseMatrix.pdf)
+An initial [version](https://github.com/binxiangni/Sparse_Matrix_in_RcppArmadillo/blob/master/RcppArmadillo-sparseMatrix.Rnw) on sparse matrix support in RcppArmadillo is written by me, and Dirk updated [it](https://github.com/RcppCore/RcppArmadillo/blob/master/vignettes/RcppArmadillo-sparseMatrix.Rnw) with the standard 'Rcpp Style' in LaTeX. You can have access to more readable vignettes here: [Initial](https://github.com/binxiangni/Sparse_Matrix_in_RcppArmadillo/blob/master/RcppArmadillo-sparseMatrix.pdf), [Improved](http://dirk.eddelbuettel.com/tmp/RcppArmadillo-sparseMatrix.pdf).
 
 ## Future
-Although the end of GSOC approaches, I will continue contributing to sparse matrix support in RcppArmadillo in the future. Recently, there will be a new [compatibility](https://github.com/conradsnicta/armadillo-code/issues/13) for COO format in Armadillo, more sparse matrix conversion will be needed on the side of RcppArmadillo. 
+Although the end of GSOC approaches, I will continue contributing to sparse matrix support in RcppArmadillo in the future. Recently, there will be a new [compatibility](https://github.com/conradsnicta/armadillo-code/issues/13) for [COO](https://en.wikipedia.org/wiki/Sparse_matrix#Coordinate_list_.28COO.29) format in Armadillo, more sparse matrix conversion will be needed on the side of RcppArmadillo. 
 
 Moreover, time for me to learn more on sparse matrix algorithms and Rcpp. Hopefully, I can participate in other development or projects on them. 
 
